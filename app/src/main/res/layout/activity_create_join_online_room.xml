@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".AddPlayers">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/background">
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/create_room"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="130dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/roomCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_back_dark_blue"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:hint="@string/enter_room_code"
+                android:textColorHint="@color/light_white"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/round_back_darker_blue"
+                android:drawableLeft="@drawable/round_back_darker_blue"
+                android:drawableEnd="@drawable/round_back_darker_blue"
+                android:drawableRight="@drawable/round_back_darker_blue"
+                android:drawablePadding="59dp"/>
+
+            <Button
+                android:id="@+id/btn_join"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/join_room"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
